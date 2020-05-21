@@ -46,7 +46,7 @@ app.listen(3000);
 app.use(session({
   store: new sessionStore({
       data_storage_area: "./rsdb",
-      collection, "session"
+      collection: "session",
       purge_interval: 700,
     }),
   ...
